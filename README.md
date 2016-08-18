@@ -25,7 +25,7 @@ The following functions can cause XSS if not secured:
 - ```add_query_arg```
 - ```remove_query_arg```
 
-Reference: https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+Reference: [https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html](https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html)
 
 #### DISALLOW_UNFILTERED_HTML
 
@@ -64,7 +64,7 @@ Note: Before WordPress 3.5 ```$wpdb->prepare``` could be used insecurely as you 
 
 Unsafe escaping ('securing') API methods:
 
-- ```esc_sql()``` function does not adequately protect against SQL Injection https://codex.wordpress.org/Function_Reference/esc_sql
+- ```esc_sql()``` function does not adequately protect against SQL Injection [https://codex.wordpress.org/Function_Reference/esc_sql](https://codex.wordpress.org/Function_Reference/esc_sql)
 - ```escape()``` same as above
 - ```esc_like()``` same as above
 - ```like_escape()``` same as above
@@ -95,7 +95,7 @@ Unsafe escaping ('securing') API methods:
 
 ## Further reading/references:
 
-1. https://developer.wordpress.org/plugins/security/
-2. https://make.wordpress.org/plugins/2013/11/24/how-to-fix-the-intentionally-vulnerable-plugin/
-3. http://wordpress.tv/2011/01/29/mark-jaquith-theme-plugin-security/
-4. https://www.wordfence.com/learn/
+1. [https://developer.wordpress.org/plugins/security/](https://developer.wordpress.org/plugins/security/)
+2. [https://make.wordpress.org/plugins/2013/11/24/how-to-fix-the-intentionally-vulnerable-plugin/](https://make.wordpress.org/plugins/2013/11/24/how-to-fix-the-intentionally-vulnerable-plugin/)
+3. [http://wordpress.tv/2011/01/29/mark-jaquith-theme-plugin-security/](http://wordpress.tv/2011/01/29/mark-jaquith-theme-plugin-security/)
+4. [https://www.wordfence.com/learn/](https://www.wordfence.com/learn/)
