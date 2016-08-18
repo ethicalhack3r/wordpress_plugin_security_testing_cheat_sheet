@@ -22,8 +22,8 @@ _(Note: the list of sources above is not extensive nor complete)_
 
 The following functions can cause XSS if not secured:
 
-- ```add_query_arg```
-- ```remove_query_arg```
+- ```add_query_arg()```
+- ```remove_query_arg()```
 
 Reference: [https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html](https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html)
 
@@ -39,18 +39,18 @@ define( 'DISALLOW_UNFILTERED_HTML', true );
 
 Unsafe API methods (require sanitising/escaping):
 
-- ```$wpdb->query```
-- ```$wpdb->get_var```
-- ```$wpdb->get_row```
-- ```$wpdb->get_col```
-- ```$wpdb->get_results```
-- ```$wpdb->replace```
+- ```$wpdb->query()```
+- ```$wpdb->get_var()```
+- ```$wpdb->get_row()```
+- ```$wpdb->get_col()```
+- ```$wpdb->get_results()```
+- ```$wpdb->replace()```
 
 Safe API methods (according to WordPress):
 
-- ```$wpdb->insert```
-- ```$wpdb->update```
-- ```$wpdb->delete```
+- ```$wpdb->insert()```
+- ```$wpdb->update()```
+- ```$wpdb->delete()```
 
 Safe code, prepared statement:
 
