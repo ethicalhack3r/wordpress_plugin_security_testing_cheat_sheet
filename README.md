@@ -77,7 +77,7 @@ Unsafe escaping ('securing') API methods:
 <?php $wpdb->print_error(); ?>
 ```
 
-## Authentication / Authorisation
+## Authorisation
 
 - ```is_admin()``` does not check if the user is authenticated as administrator, only checks if page displayed is in the admin section, can lead to auth bypass if misused.
 - ```current_user_can()``` used for checking authorisation.
