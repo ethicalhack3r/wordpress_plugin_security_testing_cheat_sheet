@@ -1,5 +1,9 @@
 # WordPress Plugin Security Testing Cheat Sheet
 
+This cheat sheet was compiled by [Dewhurst Security](https://dewhurstsecurity.com "Dewhurst Security") to record the knowledge gained when testing WordPress plugins for security issues for our clients. The security documentation provided by WordPress and found online for plugin security is sparse, outdated or unclear. This cheat sheet is intended for Penetration Testers who audit WordPress plugins or developers who wish to audit their own WordPress plugins.
+
+This is a living document, feedback in the form of Issues or Pull Requests is very much welcomed.
+
 ## Cross-Site Scripting (XSS)
 
 Check if the following global PHP variables are echo'd to pages, or stored in the database and echo'd at a later time without first being sanitised or output encoded.
