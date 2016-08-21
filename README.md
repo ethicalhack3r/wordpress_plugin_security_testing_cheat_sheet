@@ -82,7 +82,7 @@ Unsafe escaping ('securing') API methods:
 
 - ```is_admin()``` does not check if the user is authenticated as administrator, only checks if page displayed is in the admin section, can lead to auth bypass if misused.
 - ```is_user_admin()``` same as above
-- ```current_user_can()``` used for checking authorisation. This is what shoul be used to check authorisation.
+- ```current_user_can()``` used for checking authorisation. This is what should be used to check authorisation.
 
 ## Open Redirect
 
