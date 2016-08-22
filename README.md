@@ -13,6 +13,7 @@ Check if the following global PHP variables are echo'd to pages, or stored in th
 - ```$_REQUEST```
 - ```$_SERVER['REQUEST_URI']```
 - ```$_SERVER['PHP_SELF']```
+- ```$_SERVER['HTTP_REFERER']```
 - ```$_COOKIE```
 
 _(Note: the list of sources above is not extensive nor complete)_
