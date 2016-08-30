@@ -79,6 +79,15 @@ Unsafe escaping ('securing') API methods:
 <?php $wpdb->print_error(); ?>
 ```
 
+## File Inclusion
+
+- ```include()```
+- ```require_once()```
+
+## PHP Object Injection
+
+- ``` unserialize()```
+
 ## Authorisation
 
 - ```is_admin()``` does not check if the user is authenticated as administrator, only checks if page displayed is in the admin section, can lead to auth bypass if misused.
