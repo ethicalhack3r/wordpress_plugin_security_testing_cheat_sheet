@@ -27,7 +27,12 @@ The following functions can cause XSS if not secured:
 - ```add_query_arg()```
 - ```remove_query_arg()```
 
-Reference: [https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html](https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html)
+References:
+
+[https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html](https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html)
+[https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/](https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/)
+[https://developer.wordpress.org/reference/functions/add_query_arg/](https://developer.wordpress.org/reference/functions/add_query_arg/)
+[https://developer.wordpress.org/reference/functions/remove_query_arg/](https://developer.wordpress.org/reference/functions/remove_query_arg/)
 
 #### DISALLOW_UNFILTERED_HTML
 
