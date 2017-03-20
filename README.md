@@ -110,9 +110,16 @@ Unsafe escaping ('securing') API methods:
 - ```wp_verify_nonce()``` checks the CSRF token validity server side
 - ```check_admin_referer()``` checks the CSRF token validity server side and came from admin screen
 
+## SSL/TLS
+
+- ```CURLOPT_SSL_VERIFYHOST``` if set to 0 then does not check name in host certificate
+- ```CURLOPT_SSL_VERIFYPEER``` if set to 0 then does not check if the certificate (inc chain), is trusted
+
 ## Further reading/references:
 
 1. [https://developer.wordpress.org/plugins/security/](https://developer.wordpress.org/plugins/security/)
 2. [https://make.wordpress.org/plugins/2013/11/24/how-to-fix-the-intentionally-vulnerable-plugin/](https://make.wordpress.org/plugins/2013/11/24/how-to-fix-the-intentionally-vulnerable-plugin/)
 3. [http://wordpress.tv/2011/01/29/mark-jaquith-theme-plugin-security/](http://wordpress.tv/2011/01/29/mark-jaquith-theme-plugin-security/)
 4. [https://www.wordfence.com/learn/](https://www.wordfence.com/learn/)
+5. https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYHOST.html
+6. https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
