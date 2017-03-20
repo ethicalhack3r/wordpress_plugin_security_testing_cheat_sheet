@@ -113,7 +113,7 @@ Unsafe escaping ('securing') API methods:
 ## SSL/TLS
 
 - ```CURLOPT_SSL_VERIFYHOST``` if set to 0 then does not check name in host certificate
-- ```CURLOPT_SSL_VERIFYPEER``` if set to 0 then does not check if the certificate (inc chain), is trusted
+- ```CURLOPT_SSL_VERIFYPEER``` if set to FALSE then does not check if the certificate (inc chain), is trusted
 
 ## Further reading/references:
 
