@@ -95,6 +95,19 @@ Unsafe escaping ('securing') API methods:
 
 - ``` unserialize()```
 
+## Command Execution
+
+- ```system()```
+- ```exec()```
+- ```passthru()```
+- ```shell_exec()```
+
+## PHP Code Execution
+
+- ```eval()```
+- ```assert()```
+- ```preg_replace()```
+
 ## Authorisation
 
 - ```is_admin()``` does not check if the user is authenticated as administrator, only checks if page displayed is in the admin section, can lead to auth bypass if misused.
@@ -125,3 +138,4 @@ Unsafe escaping ('securing') API methods:
 4. [https://www.wordfence.com/learn/](https://www.wordfence.com/learn/)
 5. https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYHOST.html
 6. https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
+7. https://www.owasp.org/index.php/OWASP_Wordpress_Security_Implementation_Guideline
