@@ -106,7 +106,7 @@ Unsafe escaping ('securing') API methods:
 
 - ```eval()```
 - ```assert()```
-- ```preg_replace()```
+- ```preg_replace()``` dangerous "e" flag deprecated since PHP >= 5.5.0 and removed in PHP >= 7.0.0.
 
 ## Authorisation
 
@@ -139,3 +139,4 @@ Unsafe escaping ('securing') API methods:
 5. https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYHOST.html
 6. https://curl.haxx.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
 7. https://www.owasp.org/index.php/OWASP_Wordpress_Security_Implementation_Guideline
+8. http://php.net/manual/en/function.preg-replace.php
