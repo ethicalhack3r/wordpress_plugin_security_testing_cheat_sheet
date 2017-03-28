@@ -87,6 +87,8 @@ Unsafe escaping ('securing') API methods:
 ## File Inclusion
 
 - ```include()```
+- ```require()```
+- ```include_once()```
 - ```require_once()```
 
 ## PHP Object Injection
