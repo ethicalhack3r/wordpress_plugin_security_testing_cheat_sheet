@@ -129,7 +129,7 @@ Unsafe escaping ('securing') API methods:
 
 - ```CURLOPT_SSL_VERIFYHOST``` if set to 0 then does not check name in host certificate
 - ```CURLOPT_SSL_VERIFYPEER``` if set to FALSE then does not check if the certificate (inc chain), is trusted
-- Check if HTTP is used to communicate with backend servers or APIs. A grep of "http://" should be sufficient.
+- Check if HTTP is used to communicate with backend servers or APIs. A grep for "http://" should be sufficient.
 
 ## Further reading/references:
 
