@@ -93,7 +93,11 @@ Unsafe escaping ('securing') API methods:
 
 ## PHP Object Injection
 
-- ``` unserialize()```
+- ``` unserialize()``` any raw user input passed to this function is probably exploitable, if serialized() first, probably not vulnerable
+
+### PHP Object Injection Tips
+
+Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2618e5fffd564e2734e281c86a2c9b) along with the [PHP Object Injection WordPress Plugin](https://www.pluginvulnerabilities.com/2017/07/24/wordpress-plugin-for-use-in-testing-for-php-object-injection/) created by White Fir Design.
 
 ## Command Execution
 
