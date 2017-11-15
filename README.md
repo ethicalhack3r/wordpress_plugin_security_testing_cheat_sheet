@@ -84,12 +84,19 @@ Unsafe escaping ('securing') API methods:
 <?php $wpdb->print_error(); ?>
 ```
 
+## File Download
+
+- ```file()```
+- ```readfile()```
+- ```file_get_contents()```
+
 ## File Inclusion
 
 - ```include()```
 - ```require()```
 - ```include_once()```
 - ```require_once()```
+- ```fread()```
 
 ## PHP Object Injection
 
