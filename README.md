@@ -112,6 +112,7 @@ Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2
 - ```exec()```
 - ```passthru()```
 - ```shell_exec()```
+- ```unlink()```
 
 ## PHP Code Execution
 
