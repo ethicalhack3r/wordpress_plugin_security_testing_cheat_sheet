@@ -98,6 +98,10 @@ Unsafe escaping ('securing') API methods:
 - ```require_once()```
 - ```fread()```
 
+## File Manipulation
+
+- ```unlink()``` delete arbitrary files
+
 ## PHP Object Injection
 
 - ``` unserialize()``` any raw user input passed to this function is probably exploitable, if serialized() first, probably not vulnerable
@@ -112,7 +116,6 @@ Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2
 - ```exec()```
 - ```passthru()```
 - ```shell_exec()```
-- ```unlink()```
 
 ## PHP Code Execution
 
