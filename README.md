@@ -128,6 +128,7 @@ Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2
 - ```is_admin()``` does not check if the user is authenticated as administrator, only checks if page displayed is in the admin section, can lead to auth bypass if misused.
 - ```is_user_admin()``` same as above
 - ```current_user_can()``` used for checking authorisation. This is what should be used to check authorisation.
+- ```add_action( 'wp_ajax_nopriv_``` permits non-authenticated users to use the AJAX function (https://codex.wordpress.org/Plugin_API/Action_Reference/wp_ajax_(action)).
 
 ## Open Redirect
 
