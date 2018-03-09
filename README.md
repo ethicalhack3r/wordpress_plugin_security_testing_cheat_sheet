@@ -144,7 +144,7 @@ Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2
 ## SSL/TLS
 
 - ```CURLOPT_SSL_VERIFYHOST``` if set to 0 then does not check name in host certificate
-- ```CURLOPT_SSL_VERIFYPEER``` if set to FALSE then does not check if the certificate (inc chain), is trusted
+- ```CURLOPT_SSL_VERIFYPEER``` if set to FALSE then does not check if the certificate (inc chain), is trusted. A Man-in-the-Middle (MitM) attacker could use a self-signed certificate.
 - Check if HTTP is used to communicate with backend servers or APIs. A grep for "http://" should be sufficient.
 
 ## Further reading/references:
