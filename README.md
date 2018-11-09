@@ -147,6 +147,13 @@ Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2
 - ```CURLOPT_SSL_VERIFYPEER``` if set to FALSE then does not check if the certificate (inc chain), is trusted. A Man-in-the-Middle (MitM) attacker could use a self-signed certificate.
 - Check if HTTP is used to communicate with backend servers or APIs. A grep for "http://" should be sufficient.
 
+## Priviledge Escalation
+
+- ```update_option()``` if user input is sent unvalidated, it could allow an attacker to update arbitrary WordPress options.
+- ```do_action()``` if user input is sent unvalidated, it could allow an attacker to update arbitrary WordPress actions.
+
+See: https://www.wordfence.com/blog/2018/11/privilege-escalation-flaw-in-wp-gdpr-compliance-plugin-exploited-in-the-wild/
+
 ## Further reading/references:
 
 1. [https://developer.wordpress.org/plugins/security/](https://developer.wordpress.org/plugins/security/)
