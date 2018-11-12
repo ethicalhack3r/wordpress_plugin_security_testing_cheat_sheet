@@ -156,7 +156,15 @@ See: https://www.wordfence.com/blog/2018/11/privilege-escalation-flaw-in-wp-gdpr
 
 ## Automated Static Code Analysis
 
-- ```WordPress-Coding-Standards``` contains some security rules. See: https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+- ```WordPress-Coding-Standards``` contains some security rules. 
+
+Example:
+
+```
+./vendor/bin/phpcs --standard=WordPress --sniffs=WordPress.CSRF.NonceVerification,WordPress.DB.PreparedSQL,WordPress.DB.PreparedSQLPlaceholders,WordPress.DB.RestrictedClasses,WordPress.DB.RestrictedFunctions,WordPress.Security.NonceVerification,WordPress.Security.PluginMenuSlug,WordPress.Security.SafeRedirect,WordPress.Security.ValidatedSanitizedInput,WordPress.WP.PreparedSQL,WordPress.XSS.EscapeOutput /path/to/plugin/
+```
+
+See: https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
 
 ## Further reading/references:
 
