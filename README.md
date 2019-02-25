@@ -161,7 +161,7 @@ See: https://www.wordfence.com/blog/2018/11/privilege-escalation-flaw-in-wp-gdpr
 Example:
 
 ```
-./vendor/bin/phpcs --standard=WordPress --sniffs=WordPress.CSRF.NonceVerification,WordPress.DB.PreparedSQL,WordPress.DB.PreparedSQLPlaceholders,WordPress.DB.RestrictedClasses,WordPress.DB.RestrictedFunctions,WordPress.Security.NonceVerification,WordPress.Security.PluginMenuSlug,WordPress.Security.SafeRedirect,WordPress.Security.ValidatedSanitizedInput,WordPress.WP.PreparedSQL,WordPress.XSS.EscapeOutput /path/to/plugin/
+./vendor/bin/phpcs --standard=WordPress --sniffs=WordPress.CSRF.NonceVerification,WordPress.DB.PreparedSQL,WordPress.DB.PreparedSQLPlaceholders,WordPress.DB.RestrictedClasses,WordPress.DB.RestrictedFunctions,WordPress.Security.NonceVerification,WordPress.Security.PluginMenuSlug,WordPress.Security.SafeRedirect,WordPress.Security.ValidatedSanitizedInput,WordPress.Security.EscapeOutputSniff,WordPress.WP.PreparedSQL,WordPress.XSS.EscapeOutput -p -d memory_limit=256M --colors /path/to/plugin/
 ```
 
 See: https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
