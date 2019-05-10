@@ -102,6 +102,10 @@ Unsafe escaping ('securing') API methods:
 
 - ```unlink()``` delete arbitrary files
 
+## File Upload
+
+- ```sanitize_file_name()``` can create valid PHP files, turns `test.(php)` into `test.php`
+
 ## PHP Object Injection
 
 - ``` unserialize()``` any raw user input passed to this function is probably exploitable, if serialized() first, probably not vulnerable
