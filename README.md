@@ -22,10 +22,12 @@ _(Note: the list of sources above is not extensive nor complete)_
 
 #### Unsafe API functions
 
-The following functions can cause XSS if not secured as they use the PHP_SELF variable when the third URL paramater is not passed:
+The following functions can cause XSS if not secured as they use the PHP_SELF variable when the second or third paramater is not a URL:
 
 - ```add_query_arg()```
 - ```remove_query_arg()```
+
+Example regex: `add_query_arg\(['"\s]+[^,]+['"]\s?\)`
 
 References:
 
