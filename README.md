@@ -128,6 +128,7 @@ Use this [simple Burp Suite extention](https://gist.github.com/ethicalhack3r/7c2
 - ```eval()```
 - ```assert()```
 - ```preg_replace()``` dangerous "e" flag deprecated since PHP >= 5.5.0 and removed in PHP >= 7.0.0.
+- ```php://input``` reads raw data from the request body, can lead to RCE if used in eval
 
 ## Authorisation
 
