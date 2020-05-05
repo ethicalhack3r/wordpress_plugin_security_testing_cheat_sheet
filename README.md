@@ -27,8 +27,6 @@ The following functions can cause XSS if not secured as they use the PHP_SELF va
 - ```add_query_arg()```
 - ```remove_query_arg()```
 
-Example regex to only find instances where the third securing paramater is not used: `add_query_arg\([^,]+,[^,]+\)`
-
 References:
 
 [https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html](https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html)
