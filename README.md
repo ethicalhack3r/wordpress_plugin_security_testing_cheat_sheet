@@ -110,7 +110,8 @@ Unsafe escaping ('securing') API methods:
 
 ## PHP Object Injection
 
-- ``` unserialize()``` any raw user input passed to this function is probably exploitable, if serialized() first, probably not vulnerable
+- ```unserialize()``` any raw user input passed to this function it is probably exploitable
+- ```maybe_unserialize()``` any raw user input passed to this function it is probably exploitable
 
 ### PHP Object Injection Tips
 
