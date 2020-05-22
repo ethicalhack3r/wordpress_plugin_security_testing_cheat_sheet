@@ -4,6 +4,28 @@ This cheat sheet was compiled by [Dewhurst Security](https://dewhurstsecurity.co
 
 This is a living document, feedback in the form of Issues or Pull Requests is very much welcomed.
 
+## Testing Environment
+
+Install easy test WordPress instances with [Local by Flywheel](https://localwp.com/).
+
+### Proxy WordPress
+
+To proxy WordPress HTTP requests through a proxy such as Burp Suite you configure WordPress to use a proxy. This is useful if a plugin makes backend API requests.
+
+```
+define('WP_PROXY_HOST', '192.168.84.101');
+define('WP_PROXY_PORT', '8080');
+define('WP_PROXY_BYPASS_HOSTS', 'localhost, www.example.com, *.wordpress.org');
+```
+
+### DISALLOW_UNFILTERED_HTML
+
+When doing dynamic testing for XSS the following setting in the wp-config.php file may reduce false positive results as it prevents administrative and editor users from being able to embed/execute JavaScript/HTML, which by default they are permitted to do.
+
+```
+define( 'DISALLOW_UNFILTERED_HTML', true );
+``` 
+
 ## Cross-Site Scripting (XSS)
 
 Check if the following global PHP variables are echo'd to pages, or stored in the database and echo'd at a later time without first being sanitised or output encoded.
@@ -35,14 +57,6 @@ References:
 [https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/](https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/)
 [https://developer.wordpress.org/reference/functions/add_query_arg/](https://developer.wordpress.org/reference/functions/add_query_arg/)
 [https://developer.wordpress.org/reference/functions/remove_query_arg/](https://developer.wordpress.org/reference/functions/remove_query_arg/)
-
-#### DISALLOW_UNFILTERED_HTML
-
-When doing dynamic testing for XSS the following setting in the wp-config.php file may reduce false positive results as it prevents administrative and editor users from being able to embed/execute JavaScript/HTML, which by default they are permitted to do.
-
-```
-define( 'DISALLOW_UNFILTERED_HTML', true );
-``` 
 
 ## SQL Injection
 
