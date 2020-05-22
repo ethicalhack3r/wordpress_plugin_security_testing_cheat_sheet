@@ -13,10 +13,14 @@ Install easy test WordPress instances with [Local by Flywheel](https://localwp.c
 To proxy WordPress HTTP requests through a proxy such as Burp Suite you configure WordPress to use a proxy. This is useful if a plugin makes backend API requests.
 
 ```
-define('WP_PROXY_HOST', '192.168.84.101');
+define('WP_PROXY_HOST', '127.0.0.1');
 define('WP_PROXY_PORT', '8080');
 define('WP_PROXY_BYPASS_HOSTS', 'localhost, www.example.com, *.wordpress.org');
 ```
+
+### Log HTTP Requests
+
+The [Log HTTP Requests](https://wordpress.org/plugins/log-http-requests/) WordPress plugin logs any outgoing HTTP requests, which can be useful if a plugin uses a backend API.
 
 ### DISALLOW_UNFILTERED_HTML
 
