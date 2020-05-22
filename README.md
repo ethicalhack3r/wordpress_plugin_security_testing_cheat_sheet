@@ -10,7 +10,7 @@ Install easy test WordPress instances with [Local by Flywheel](https://localwp.c
 
 ### Proxy WordPress
 
-To proxy WordPress HTTP requests through a proxy such as Burp Suite you configure WordPress to use a proxy. This is useful if a plugin makes backend API requests. You may need to set Burp Suite to listen on all interfaces. You may also need to disable SSL verification within the plugin's source code.
+To proxy WordPress HTTP requests through a proxy, such as Burp Suite, you can configure WordPress to use a proxy. This is useful if a plugin makes backend API requests. You may need to set Burp Suite to listen on all interfaces. You may also need to disable SSL verification within the plugin's source code.
 
 ```
 define('WP_PROXY_HOST', '127.0.0.1');
